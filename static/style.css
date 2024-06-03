@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;  
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: rgb(58, 80, 109);
+}
+
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2{
+    color: #ffb742;
+    font-weight: 600;
+}
+
+.navbar ul{
+    display: flex;
+
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:antiquewhite;
+    font-size: 15.5px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li:hover a{
+    color: #ffb742;  
+}
+
+.navbar ul li:last-child a{
+    margin: 0;
+}
+
+.hire-btn{
+    background: #ffb742;
+    padding: 7px 30px;
+    border: none;
+    font-size: 15.5px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover{
+background: #a99ebe;
+}
+
+.main{
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h4{
+    font-size: 32px;
+    color: antiquewhite;
+    font-weight: 600;
+    margin-top: 50px;
+
+}
+
+.main h4 span{
+    color: #ffb742;
+    text-decoration: underline;
+}
+
+.main p.title{
+
+    font-size: 44px;
+    font-weight: 600;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+
+.main p.subtitle{
+    font-size: 15.5px;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.main img{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.guarantee{
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+
+.guarantee .item{
+    background: #292b2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.guarantee .item:hover{
+    border-color: #ffb742;
+}
+.guarantee .item .icon{
+    width:47px;
+    height: 47px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.guarantee .item:hover .icon{
+    background-color: #ffb742;
+}
+
+.guarantee .item .icon{
+font-size: 30px;
+}
+
+.guarantee .item .info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee .item .info h3{
+    color: #ffb742;
+    font-size: 29px;
+}
+
+.guarantee .item .info p{
+    color:antiquewhite;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.guarantee .item > i{
+    color:antiquewhite;
+    font-size: 32px;
+    transition: color 0.3s ease;
+}
+
+.guarantee .item:hover > i{
+    color: #a99ebe;
+}
+
+.separator {
+    margin: 50px 50px 30px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    display: inline-block;
+    color: #ffb742;
+    border-radius: 15px;
+}
+
+
+.about{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 80px;
+padding:0 50px;
+}
+
+.about img{
+    width:280px;
+}
+
+.about .info h3{
+    color:antiquewhite;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .info p{
+    color:#a99ebe;
+    font-size: 17.5px;
+}
+
+.about .info button{
+    margin-top: 30px;  
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.skills .left{
+    width: 680px;
+}
+
+.skills .left .info h3{
+    color:antiquewhite;
+    font-size: 30;
+    margin-bottom: 20px;
+}
+
+.skills .left .info p{
+    color:#a99ebe;
+    font-size:15px;
+}
+.skills .left button{
+    margin-top: 30px;
+}
+
+.skills :right{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 120px;
+    display:flex;
+    gap: 15px;
+}
+.skills :right .item{
+    display: flex;
+    background: #383e45 ;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.skills .right .item i{
+    color: #ccc;
+    font-size: 35px;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.skills .left {
+    width: 680px;
+}
+
+.skills .left .info h3{
+    color:antiquewhite;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.skills .left .info p{
+    color:#a99ebe;
+    font-size: 15px;
+}
+
+.skills .left button{
+    margin-top: 30px;
+}
+
+.skills .right {
+    display: flex;
+    height: 120px;
+    width: 420px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills .right .item{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    background: #383e45;
+    width:50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.skills .right .item i{
+    font-size: 35px;
+}
+
+footer{
+    background: rgb(14, 28, 47);
+    position: relative;
+    padding: 75px 50px 40px;
+    margin-top: 100px;
+}
+footer .start{
+    align-items: center;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    background-color: #a99ebe;
+    padding: 25px 25px;
+    border-radius: 15px;
+    width: 70%;
+    top: -15%;
+    left: 15%; 
+}
+
+footer .start p{
+    font-size: 15px;
+    width: 35%;
+}
+
+footer .start button {
+    background: #ffb742;
+    border: 1px solid black;
+    cursor:pointer;
+    padding: 5px 65px;
+    transition: all 0.3s ease;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+footer .start button:hover{
+    background-color:#ccc;
+    border-color:antiquewhite;
+}
+
+footer .cols{
+    align-items: start;
+    display:flex;
+}
+
+footer .cols .about-col{
+    flex: 3;
+}
+
+footer .cols .about-col h3{
+    color: #ffb742;
+    margin-bottom: 20px;
+}
+
+footer .cols .about-col p{
+    color: #ccc;
+    font-size: 13px;
+}
+
+footer .cols links-col{
+    flex: 3;
+}
+
+footer .cols .links-col h4{
+    color:antiquewhite;
+    margin-bottom: 40px;
+}
+footer .cols .links-col a{
+    display: block;
+    text-decoration: none;
+    color: #7b7b7b
+}
