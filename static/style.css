@@ -116,6 +116,7 @@ background: #a99ebe;
 .guarantee .item{
     background: #292b2e;
     display: flex;
+    cursor: pointer;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -360,11 +361,15 @@ footer .cols .about-col{
 footer .cols .about-col h3{
     color: #ffb742;
     margin-bottom: 20px;
+    padding-top: 40px;
 }
 
 footer .cols .about-col p{
     color: #ccc;
     font-size: 13px;
+    display: flex;
+    min-width: 250px;
+ 
 }
 
 footer .cols links-col{
@@ -373,10 +378,80 @@ footer .cols links-col{
 
 footer .cols .links-col h4{
     color:antiquewhite;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding-top: 40px;
 }
-footer .cols .links-col a{
+footer .cols .links-col a {
+    font-size: 15px;;
     display: block;
     text-decoration: none;
-    color: #7b7b7b
+    color: #7b7b7b;
+    line-height: 25px;
+    transition: color 0.3s ease;
+}
+
+.add-menu {
+    display: flex;
+    min-width: 250px;
+    justify-content: space-between;
+}
+
+footer .cols .links-col a:hover{
+    color: #ffb742;
+}
+
+@media screen and (max-width: 800px) {
+    .guarantee{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .guarantee .item{
+        flex-basis: 50%;
+    }
+
+    .skills{
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .skills .left {
+        width: 500px;
+    }
+    .skills .left .info h3{
+        font-size: 22px;
+    }
+    .skills .left .info p{
+        font-size: 12px;
+    }
+    footer{
+        margin-top: 150px;
+    }
+    footer .start {
+        width: 90%;
+        left: 5%;
+        top: -20%;
+    }
+    footer .cols{
+        flex-wrap: wrap;
+    }
+    footer .cols .about-col{
+        flex-basis: 50%;
+    }
+    footer .cols .links-col{
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .navbar button{
+        display: none;
+    }
+    .main h4{
+        font-size: 24px;
+    }
+    .main p.title{
+        font-size: 35px;
+    }
+    .main p.subtitle {
+        font-size: 14px;
+    }
 }
