@@ -77,7 +77,29 @@ background: #a99ebe;
     color: antiquewhite;
     font-weight: 600;
     margin-top: 50px;
+}
 
+.portfolio-main{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-main h4{
+    font-size: 32px;
+    color: antiquewhite;
+    font-weight: 600;
+    margin-top: 0px;
+    padding: 0px;
+
+}
+
+.portfolio-main p.portfolio-subtitle{
+    font-size: 15.5px;
+    color: #ccc;
+    margin-top: 15px;
 }
 
 .main h4 span{
@@ -366,10 +388,17 @@ footer .cols .about-col h3{
 
 footer .cols .about-col p{
     color: #ccc;
-    font-size: 13px;
+    font-size: 14px;
     display: flex;
     min-width: 250px;
  
+}
+
+footer .copyright {
+    color: #7b7b7b;
+    font-size: 13px;
+    display: flex;
+    min-width: 250px;
 }
 
 footer .cols links-col{
@@ -454,4 +483,122 @@ footer .cols .links-col a:hover{
     .main p.subtitle {
         font-size: 14px;
     }
+    .guarantee .item{
+        flex-basis: 100%;
+    }
+    .about {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+
+@media screen and (max-width: 650px) {
+    .navbar{
+        justify-content: center;
+    }
+    .navbar h2{
+        display: none;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+    }
+    .main{
+        margin-top: 50px;
+        height: 320px;
+        justify-content: start;
+    }
+    .main h4{
+        font-size: 20px;
+    }
+    .main p.title{
+        font-size: 28px;
+    }
+    .main p.subtitle{
+        font-size: 12px;
+    }
+    .main img{
+        margin-top: 40px;
+        width: 150px;
+        height: 150px;
+    }
+    .skills{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skills .right{
+        justify-content: space-between;
+    }
+    .skills .left .info h3{
+        font-size: 20px;
+    }
+    .footer .start{
+        top: -9%;
+    }
+    footer .start p{
+        display: none;
+    }
+    footer .cols .about-col{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    footer .copyright{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    footer .cols .links-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .guarantee .item .info h3{
+        font-size: 20px;
+    }
+    .guarantee .item .info p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+a{
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #ffb742;
+}
+
+.links-list ul li{
+    list-style: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.links-list h1{
+    color: #ccc;
+    font-family:'Poppins', sans-serif; 
+    text-decoration: underline;
+    margin-left: 40%; 
+}
+
+.links-list ul li span{
+    background-color: #ffb742;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 3px 6px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: rgb(14, 28, 47);
+
+}
+
+
+
+
